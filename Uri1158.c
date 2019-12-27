@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int i,x,y,k=0,n,j;
+    scanf("%d",&n);
+    for(j=1;j<=n;j++)
+    {
+        scanf("%d%d",&x,&y);
+        if(x%2!=0)
+        {
+            for(i=1;i<=y;i++)
+            {
+                k=k+x;
+                x=x+2;
+            }
+                printf("%d\n",k);
+                k=0;
+        }
+        else
+        {
+            x++;
+            for(i=1;i<=y;i++)
+            {
+                k=k+x;
+                x=x+2;
+            }
+                printf("%d\n",k);
+                k=0;
+        }
+    }
+}
